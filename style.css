@@ -1,0 +1,205 @@
+@font-face {
+    font-family:"Neue Montreal Regular";
+    src: url(assets/font/NeueMontreal-Regular.woff2) format("woff2");
+}
+
+@font-face{
+    font-family: "Neue Montreal Medium";
+    src: url(assets/font/NeueMontreal-Medium.woff2) format("woff2");
+}
+
+@font-face{
+    font-family: "Neue Montreal Medium Italic";
+    src: url(assets/font/NeueMontreal-MediumItalic.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Reckless Neue Regular";
+    src: url(assets/font/RecklessNeue-Regular.woff2) format("woff2");
+}
+
+:root{
+    --background-blue: #112C50;
+    --background-button-yellow: #E3BE86;
+    --background-button-orange: #C55A26;
+
+    --font-color-white: #F1F0EA;
+    --font-color-black: #000000;
+
+
+    --font-family-text: "Neue Montreal Regular"; 
+    --font-family-text-medium: "Neue Montreal Medium";
+    --font-family-text-italic-medium: "Neue Montreal Medium Italic";
+    --font-family-title: "Reckless Neue Regular";
+
+    --font-size-top-bar: 14px;
+    --font-size-nav-bar:16px;
+    --font-size-p-inicio: 18px;
+    --font-size-eslogan: 55px;
+
+    --margin-buttons:30px;
+
+    --padding-box: 7px;
+    --padding-item-right-top: 20px; 
+    --padding-top-logo:20px;
+    --padding-left-nav:25px;
+    --padding-inicio: 100px;
+    --padding-header: 22px;
+    --padding-buttons: 15px;
+
+    --border-radius-button:7px;
+
+    --margin-grid: 120px
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.margin-grid{
+    margin-left: var(--margin-grid);
+    margin-right: var(--margin-grid);
+}
+
+.top-bar{
+    background-color: var(--background-blue);
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-top-bar);
+    color:var(--font-color-white);
+    padding: var(--padding-box);
+}
+
+.top-links{
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.top-grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.top-item2{
+    grid-row: 1 / 2;
+    grid-column: 11 / 12 ;
+}
+
+.top-item1{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+.top-item3{
+    grid-row: 1 / 2;
+    grid-column: 12 / 13;
+}
+
+
+.inicio{
+    background-image: url(assets/img/header-background.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 600px; 
+    background-repeat: no-repeat;
+    
+}
+
+.padding-top-nav{
+    padding-top: var(--padding-top-logo);
+}
+
+.flex{
+    display: flex;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.col{
+    flex-direction: column;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.nav-links{
+    list-style: none;
+}
+
+.text-links{
+    font-family: var(--font-family-text);
+    color: var(--font-color-white);
+    text-decoration: none;
+    padding-left: var(--padding-left-nav);
+    font-family: var(--font-family-text-medium);
+    font-size: var(--font-size-nav-bar);
+}
+
+.inicio > nav {
+    padding-bottom: var(--padding-inicio);
+}
+
+.hero-content{
+    color: var(--font-color-white);
+    font-family: var(--font-family-text);
+}
+
+.highlight{
+    font-family: var(--font-family-text-italic-medium) ;
+    font-size: var(--font-size-p-inicio);
+}
+
+.hero-content > p{
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-p-inicio);
+    font-weight: 100;
+}
+
+.hero-content h1{
+    padding-top: var(--padding-header);
+    padding-bottom:  var(--padding-header);
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-eslogan);
+    font-weight: 300;
+}
+
+.hero-buttons{
+   padding-top: var(--padding-header);
+}
+
+.hero-buttons > button {
+    padding: var(--padding-buttons);
+    margin-right: var(--margin-buttons);
+    border-radius: 7px;
+    border: 0;
+}
+
+.btn-primary{
+    background-color: var(--background-button-yellow);
+}
+
+.btn-secondary{
+    background-color: var(--background-button-orange);
+}
+
+.button-link-black{
+    color: var(--font-color-black);
+    text-decoration: none;
+    font-family: var(--font-family-text-medium);
+    font-size: var(--font-size-top-bar);
+}
+
+.button-link-white{
+    color: var(--font-color-white);
+    text-decoration: none;
+    font-family: var(--font-family-text-medium);
+    font-size: var(--font-size-top-bar);
+}
