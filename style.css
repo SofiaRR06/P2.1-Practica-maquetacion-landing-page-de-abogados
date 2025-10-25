@@ -49,6 +49,7 @@
     --padding-header: 22px;
     --padding-buttons: 15px;
     --padding-sections: 60px;
+    --padding-sections-big: 80px;
     --padding--top-section-about:80px;
     --padding-separation-text-sections:30px;
 
@@ -124,7 +125,7 @@
 }
 
 .col{
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .justify-content-between{
@@ -266,4 +267,44 @@
 
 .border-radius-img{
     border-radius: 30px;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.services{
+    background-image: url(assets/img/techo-cristal.jpg);
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    height: 500px; 
+    background-repeat: no-repeat;
+}
+
+.title-services{
+    padding-top: var(--padding-sections-big);
+    color: var(--font-color-white);
+    font-family: var(--font-family-title);
+    font-weight: 100;
+    font-size: var(--font-size-eslogan);
+    text-align: center;
+}
+
+.p-services{
+    color: var(--font-color-white);
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-p-inicio);
+    text-align: center;
+    padding-top: var(--padding-separation-text-sections);
+    padding-bottom: var(--padding-separation-text-sections);
+}
+
+.btn-services{
+    text-align: center;
+    margin-left: 15px;
+}
+
+.team-grid{
+    
 }
