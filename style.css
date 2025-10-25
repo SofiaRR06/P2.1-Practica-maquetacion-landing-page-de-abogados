@@ -35,7 +35,9 @@
     --font-size-top-bar: 14px;
     --font-size-nav-bar:16px;
     --font-size-p-inicio: 18px;
+    --font-size-p:16px;
     --font-size-eslogan: 55px;
+    --font-size-section-title: 32px;
 
     --margin-buttons:30px;
 
@@ -46,6 +48,9 @@
     --padding-inicio: 100px;
     --padding-header: 22px;
     --padding-buttons: 15px;
+    --padding-sections: 60px;
+    --padding--top-section-about:80px;
+    --padding-separation-text-sections:30px;
 
     --border-radius-button:7px;
 
@@ -175,19 +180,21 @@
    padding-top: var(--padding-header);
 }
 
-.hero-buttons > button {
-    padding: var(--padding-buttons);
+
+.btn-primary{
+    background-color: var(--background-button-yellow);
+        padding: var(--padding-buttons);
     margin-right: var(--margin-buttons);
     border-radius: 7px;
     border: 0;
 }
 
-.btn-primary{
-    background-color: var(--background-button-yellow);
-}
-
 .btn-secondary{
     background-color: var(--background-button-orange);
+    padding: var(--padding-buttons);
+    margin-right: var(--margin-buttons);
+    border-radius: 7px;
+    border: 0;
 }
 
 .button-link-black{
@@ -202,4 +209,61 @@
     text-decoration: none;
     font-family: var(--font-family-text-medium);
     font-size: var(--font-size-top-bar);
+}
+
+.about{
+    margin-left: var(--margin-grid);
+    margin-right: var(--margin-grid);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    padding-top: var(--padding--top-section-about);
+    padding-bottom: var(--padding-sections);
+    position: relative;
+
+}
+
+.item-left-about{
+    grid-column: 2 / 6;
+    grid-row: 1 / 1 ;
+}
+
+.item-right-about{
+    grid-column: 7 / 12;
+    grid-row: 1 / 1;
+}
+
+
+.blue-square{
+    position: absolute;
+    width: 40px; /* Ajusta el ancho según necesites */
+    height: 5px; /* Ajusta la altura según necesites */
+    background-color: #003366; /* Cambia el color según el tono de azul que desees */
+    margin-bottom: 8px;
+    left: 107px;
+    top:60px;
+}
+
+.item-left-about > h2{
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-section-title);
+    font-weight: 100;
+    padding-bottom: var(--padding-separation-text-sections);
+}
+
+.item-left-about > p {
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-p-inicio);
+}
+
+.text-italic{
+    font-family: var(--font-family-text-italic-medium);
+}
+
+.bottom-separation-text{
+     padding-bottom: 70px;
+}
+
+.border-radius-img{
+    border-radius: 30px;
 }
