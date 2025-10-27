@@ -68,6 +68,7 @@
 
 
 <!-- About Section -->
+ <div class="background-white">
 <section class="about">
   <div class="blue-square"></div>
   <article class="item-left-about">
@@ -91,6 +92,7 @@
     <img class="border-radius-img" src="assets/img/klaus-maziul.jpg" alt="Klaus Maziul hablando por teléfono" />
   </aside>
 </section>
+</div>
 
 <!-- Services Section -->
 <section class="services">
@@ -110,6 +112,7 @@
 </section>
 
 <!-- Team Section -->
+ <div class="background-white">
 <section class="team team-grid">
   <div class="team-left">
     <div class="blue-square-team"></div>
@@ -141,6 +144,7 @@
     </div>
   </div>
 </section>
+</div>
 
 <!-- Testimonials Section -->
 <section class="testimonials">
@@ -156,7 +160,7 @@
           estratégico y<br>
           profesionalismo resultaron en una resolución<br> exitosa.”
         </p>
-        <footer class="text-card">Pepita Suarez</footer>
+        <footer class="text-card background-white">Pepita Suarez</footer>
       </blockquote>
       <blockquote class="card-testimonials flex col">
         <p class="text-card text-testimonials">
@@ -165,7 +169,7 @@
           positivos
           rápidamente.<br> ¡Confío plenamente en Maziul & Asociados para<br> cualquier asunto legal!"
         </p>
-        <footer class="text-card">Juan Perez</footer>
+        <footer class="text-card background-white">Juan Perez</footer>
       </blockquote>
       <blockquote class="card-testimonials flex col">
         <p class="text-card text-testimonials">Mi experiencia con Klaus fue extraordinaria. El<br> abogado y su equipo
@@ -175,13 +179,14 @@
           Recomiendo encarecidamente los servicios de<br> Maziul & Asociados para asuntos legales<br> confiables y
           eficaces.
         </p>
-        <footer class="text-card">Ana Blanca</footer>
+        <footer class="text-card background-white">Ana Blanca</footer>
       </blockquote>
     </div>
   </div>
 </section>
 
 <!-- Contact Form Section -->
+ <div class="background-white">
 <section class="contact-form">
   <div class=" margin-grid blue-square-contact"></div>
   <div class="content-contact margin-grid">
@@ -211,8 +216,10 @@
       </div>
     </form>
 </section>
+</div>
 
 <!-- Location Section -->
+ <div class="background-white">
 <section class="location">
   <div class=" margin-grid blue-square-location"></div>
   <div class="content-location margin-grid">
@@ -231,37 +238,60 @@
     </div>
   </div>
 </section>
+</div>
 
 <!-- Footer -->
 <footer>
-  <div class="footer-info">
-    <a href="#">Política de privacidad</a>
-    <a href="#">FAQS</a>
-    <a href="#">Cómo llegar</a>
-  </div>
-  <div class="footer-nav">
-    <h4>NAVIGATION</h4>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Servicios</a></li>
-      <li><a href="#">Casos de estudio</a></li>
-      <li><a href="#">Sobre nosotros</a></li>
-    </ul>
-  </div>
-  <div class="footer-logo">
-    <h1>Maziul & Asociados</h1>
-    <div class="social-media">
-      <a href="#">Facebook</a>
-      <a href="#">Twitter</a>
-      <a href="#">LinkedIn</a>
+  <div class="flex row margin-grid justify-content-between">
+    <div class="footer-info flex col" >
+      <div class="flex row">
+        <div class="flex col p-right">
+          <a href="#" class="footer-links">Política de privacidad</a>
+          <a href="#" class="footer-links">Location</a>
+          <a href="#" class="footer-links">FAQS</a>
+          <a href="#" class="footer-links">Cómo llegar</a>
+        </div>
+        <div class="footer-nav flex col">
+          <h4 class="text-footer">NAVIGATION</h4>
+          <ul>
+            <li class="list-style-none"><a href="#" class="footer-links">Home</a></li>
+            <li class="list-style-none"><a href="#" class="footer-links">Servicios</a></li>
+            <li class="list-style-none"><a href="#" class="footer-links">Casos de estudio</a></li>
+            <li class="list-style-none"><a href="#" class="footer-links">Sobre nosotros</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="newsletter">
-    <h4>Suscríbete a nuestra newsletter</h4>
-    <form action="#" method="POST">
-      <input type="email" placeholder="Tu email" />
-      <button type="submit">Enviar</button>
-    </form>
+
+    <div class="footer-logo flex col justify-content-center" >
+      <figure>
+        <img src="assets/img/logo-maziul.svg" alt="Logo Maziul" />
+      </figure>
+      <div class="social-media flex row justify-content-center p-top">
+        <figure>
+          <img src="assets/img/Twitter.svg" alt="Logo twitter" class="p-social-media" />
+        </figure>
+        <figure>
+          <img src="assets/img/facebook.svg" alt="Logo facebook" class="p-social-media facebook" />
+        </figure>
+        <figure>
+          <img src="assets/img/instagram.svg" alt="Logo instagram" class="p-social-media" />
+        </figure>
+      </div>
+    </div>
+    <div class="newsletter flex col m-newsletter ">
+      <div class="footer-content">
+      <h4 class="text-footer">Apúntate a nuestra newsletter</h4>
+      <form action="#" method="POST">
+        <div class="col">
+          <input type="text" class="footer-input"/>
+        </div>
+        <div class=" col position-relative">
+          <button type="submit" class="btn-footer">ENVIAR</button>
+        </div>
+        </div>
+      </form>
+    </div>
   </div>
 </footer>
 </body>

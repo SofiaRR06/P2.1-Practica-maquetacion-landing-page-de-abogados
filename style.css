@@ -24,6 +24,7 @@
     --background-button-orange: #C55A26;
     --background-box-blue: #B9CADE;
     --background-box-white:#F1F0EA;
+    --background-square-separation: #126F8D;
     --background-input: #D9D9D9;
 
     --font-color-white: #F1F0EA;
@@ -55,12 +56,23 @@
     --padding-sections-big: 80px;
     --padding--top-section-about:80px;
     --padding-separation-text-sections:30px;
+    --padding-top-box-blue:40px;
+    --padding-box-blue:50px;
+    --padding-submit:30px;
+    --padding-top-location:40px;
+    --padding-social-media:20px;
+    --padding-top-bottom-btn-footer: 10px;
+    --padding-right-left-btn-footer:30px;
 
     --border-radius-button:7px;
+    --border-radius-items:30px;
+    --border-radius-submit:20px;
 
     --margin-grid: 120px;
+    --margin-btn-services:15px;
 
     --line-height-p: 25px;
+    --line-height-footer:40px;
 }
 
 *{
@@ -189,9 +201,9 @@
 
 .btn-primary{
     background-color: var(--background-button-yellow);
-        padding: var(--padding-buttons);
+    padding: var(--padding-buttons);
     margin-right: var(--margin-buttons);
-    border-radius: 7px;
+    border-radius: var(--border-radius-button);
     border: 0;
 }
 
@@ -199,7 +211,7 @@
     background-color: var(--background-button-orange);
     padding: var(--padding-buttons);
     margin-right: var(--margin-buttons);
-    border-radius: 7px;
+    border-radius: var(--border-radius-button);
     border: 0;
 }
 
@@ -226,7 +238,6 @@
     padding-top: var(--padding--top-section-about);
     padding-bottom: var(--padding-sections);
     position: relative;
-
 }
 
 .item-left-about{
@@ -242,9 +253,9 @@
 
 .blue-square{
     position: absolute;
-    width: 40px; /* Ajusta el ancho según necesites */
-    height: 5px; /* Ajusta la altura según necesites */
-    background-color: #003366; /* Cambia el color según el tono de azul que desees */
+    width: 40px; 
+    height: 5px; 
+    background-color: var(--background-square-separation); 
     margin-bottom: 8px;
     left: 107px;
     top:60px;
@@ -267,11 +278,11 @@
 }
 
 .bottom-separation-text{
-     padding-bottom: 70px;
+     padding-bottom: var(--padding-sections);
 }
 
 .border-radius-img{
-    border-radius: 30px;
+    border-radius: var(--border-radius-items);
 }
 
 .justify-content-center{
@@ -307,7 +318,7 @@
 
 .btn-services{
     text-align: center;
-    margin-left: 15px;
+    margin-left: var(--margin-btn-services);
 }
 
 .team-grid{
@@ -335,9 +346,9 @@
 
 .blue-square-team{
     position: absolute;
-    width: 40px; /* Ajusta el ancho según necesites */
-    height: 5px; /* Ajusta la altura según necesites */
-    background-color: #003366; /* Cambia el color según el tono de azul que desees */
+    width: 40px;
+    height: 5px; 
+    background-color: var(--background-square-separation); 
     margin-bottom: 8px;
     top:60px;
 }
@@ -350,12 +361,12 @@
 }
 
 .box-blue{
-    padding-top: 40px;
-    padding-right: 50px;
-    padding-left: 50px;
-    padding-bottom: 50px;
+    padding-top: var(--padding-top-box-blue);
+    padding-right: var(--padding-box-blue);
+    padding-left: var(--padding-box-blue);
+    padding-bottom: var(--padding-box-blue);
     background-color: var(--background-box-blue);
-    border-radius: 30px;
+    border-radius: var(--border-radius-items);
 }
 
 .text-box-team {
@@ -383,9 +394,9 @@
 
 .blue-square-testimonials{
     position: absolute;
-    width: 40px; /* Ajusta el ancho según necesites */
-    height: 5px; /* Ajusta la altura según necesites */
-    background-color: #003366; /* Cambia el color según el tono de azul que desees */
+    width: 40px; 
+    height: 5px; 
+    background-color: var(--background-square-separation);
     margin-bottom: 8px;
     top:40px;
 }
@@ -408,7 +419,6 @@
 }
 
 .text-testimonials{
-    padding-bottom: var(--padding-separation-text-sections);
     line-height: var(--line-height-p);
 }
 
@@ -424,9 +434,9 @@
 
 .blue-square-contact{
     position: absolute;
-    width: 40px; /* Ajusta el ancho según necesites */
-    height: 5px; /* Ajusta la altura según necesites */
-    background-color: #003366; /* Cambia el color según el tono de azul que desees */
+    width: 40px; 
+    height: 5px; 
+    background-color: var(--background-square-separation);
     margin-bottom: 8px;
     top:80px;
 }
@@ -503,9 +513,9 @@ textarea::placeholder {
 .btn-submit{
     grid-column: 11 / 12;
     grid-row: 8 / 8 ;
-    border-radius: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
+    border-radius: var(--border-radius-submit);
+    padding-left: var(--padding-submit);
+    padding-right: var(--padding-submit);
     background-color: transparent;
     border: solid 2px var(--font-color-black);
 }
@@ -517,9 +527,9 @@ textarea::placeholder {
 
 .blue-square-location{
     position: absolute;
-    width: 40px; /* Ajusta el ancho según necesites */
-    height: 5px; /* Ajusta la altura según necesites */
-    background-color: #003366; /* Cambia el color según el tono de azul que desees */
+    width: 40px; 
+    height: 5px; 
+    background-color: var(--background-square-separation);
     margin-bottom: 8px;
 }
 
@@ -545,8 +555,106 @@ textarea::placeholder {
 }
 
 .text-location{
-    padding-top: 40px;
+    padding-top: var(--padding-top-location);
     font-family: var(--font-family-text);
     font-size: var(--font-size-p);
     line-height: var(--line-height-p);
+}
+
+footer{
+    background-color: var(--background-blue);
+    padding-top: var(--padding-separation-text-sections);
+    padding-bottom: var(--padding-separation-text-sections);
+}
+
+.footer-links{
+    font-family: var(--font-family-text);
+    color: var(--font-color-white);
+    text-decoration: none;
+    font-size: var(--font-size-nav-bar);
+    font-weight: 100;
+    line-height: var(--line-height-footer);
+}
+
+.p-right{
+    padding-right: 100px;
+}
+
+.text-footer{
+    font-family: var(--font-family-text);
+    color: var(--font-color-white);
+    font-weight: 100;
+    line-height: var(--line-height-footer);
+}
+
+.list-style-none{
+    list-style: none;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.p-top{
+    padding-top: 30px;
+}
+
+.p-social-media{
+    padding-right: var(--padding-social-media);
+    padding-left: var(--padding-social-media);
+}
+
+.facebook{
+    border-left: 1px solid var(--font-color-white);
+    border-right: 1px solid var(--font-color-white);
+}
+
+.background-white{
+    background-color: var(--background-box-white);
+}
+
+.footer-input{
+    padding: 5px;
+    width: 100%;
+    padding-right: 40px;
+}
+
+.m-newsletter{
+ padding-left: -300px;
+}
+
+.background-white{
+    background-color: var(--background-box-white);
+}
+
+.padding-card{
+    padding: 30px;
+}
+
+.newsletter{
+    position: relative;
+    width: 25%;
+}
+
+.footer-content{
+    position: absolute;
+    left: 0px;
+}
+
+.btn-footer{
+    margin-top: 10px;
+    border-radius: var(--border-radius-items);
+    padding-top: var(--padding-top-bottom-btn-footer);
+    padding-bottom: var(--padding-top-bottom-btn-footer);
+    padding-left: var(--padding-right-left-btn-footer);
+    padding-right: var(--padding-right-left-btn-footer);
+    background-color: transparent;
+    border: solid 2px var(--font-color-white);
+    color: var(--font-color-white);
+    right: -50px;
+    position: absolute;
+}
+
+.position-relative{
+    position: relative;
 }
