@@ -168,9 +168,12 @@
         <footer class="text-card">Juan Perez</footer>
       </blockquote>
       <blockquote class="card-testimonials flex col">
-        <p class="text-card text-testimonials">Mi experiencia con Klaus fue extraordinaria. El<br> abogado y su equipo abordaron mi caso de<br> accidente laboral
-          con profesionalismo y<br> dedicación. Su comprensión sólida de la ley<br> alemana condujo a resultados exitosos.<br>
-          Recomiendo encarecidamente los servicios de<br> Maziul & Asociados para asuntos legales<br> confiables y eficaces.
+        <p class="text-card text-testimonials">Mi experiencia con Klaus fue extraordinaria. El<br> abogado y su equipo
+          abordaron mi caso de<br> accidente laboral
+          con profesionalismo y<br> dedicación. Su comprensión sólida de la ley<br> alemana condujo a resultados
+          exitosos.<br>
+          Recomiendo encarecidamente los servicios de<br> Maziul & Asociados para asuntos legales<br> confiables y
+          eficaces.
         </p>
         <footer class="text-card">Ana Blanca</footer>
       </blockquote>
@@ -180,28 +183,38 @@
 
 <!-- Contact Form Section -->
 <section class="contact-form">
-  <h3>Consulta gratuita</h3>
-  <p>
-    Programar una consulta es fácil. Llámenos directamente o complete el
-    formulario en línea.
-  </p>
-  <form action="#" method="POST">
-    <label for="name">Nombre</label>
-    <input type="text" id="name" name="name" />
-    <label for="surname">Apellidos</label>
-    <input type="text" id="surname" name="surname" />
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" />
-    <label for="subject">Título</label>
-    <input type="text" id="subject" name="subject" />
-    <label for="message">Motivo de consulta</label>
-    <textarea id="message" name="message"></textarea>
-    <button type="submit" class="btn primary">Enviar</button>
-  </form>
+  <div class=" margin-grid blue-square-contact"></div>
+  <div class="content-contact margin-grid">
+    <h3 class="title-contact">Consulta gratuita</h3>
+    <p class="text-card">
+      Programar una consulta es fácil. Puede llamarnos directamente al número proporcionado en<br> nuestro sitio web o
+      completar el formulario de contacto en línea.
+    </p>
+    <form action="#" method="POST" >
+      <div class="contact-grid">
+      <div class="item-nombre">
+      <input type="text" id="name" name="name" placeholder="Nombre" class="input-box" />
+      </div>
+      <div class="item-apellidos">
+      <input type="text" id="surname" name="surname" placeholder="Apellidos" class="input-box"/>
+      </div>
+      <div class="item-email">
+      <input type="email" id="email" name="email" placeholder="Email" class="input-box"/>
+      </div>
+      <div class="item-tlf">
+      <input type="text" id="tlf" name="tlf" placeholder="Tlf." class="input-box"/>
+      </div>
+      <div class="item-mensaje">
+      <textarea id="message" name="message" rows="5" class="input-box" placeholder="Motivo de consulta"></textarea>
+      </div>
+      <button type="submit" class="btn-submit">ENVIAR</button>
+       </div>
+    </form>
 </section>
 
 <!-- Location Section -->
 <section class="location">
+  <div class=" margin-grid blue-square-contact"></div>
   <h3>Dónde encontrarnos</h3>
   <p>C/ Barcas 31, Valencia CP. 46005</p>
   <div class="map">
