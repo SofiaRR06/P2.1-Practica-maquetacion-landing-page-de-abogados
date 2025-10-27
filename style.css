@@ -31,10 +31,10 @@
     --font-color-black: #000000;
 
 
-    --font-family-text: "Neue Montreal Regular"; 
-    --font-family-text-medium: "Neue Montreal Medium";
-    --font-family-text-italic-medium: "Neue Montreal Medium Italic";
-    --font-family-title: "Reckless Neue Regular";
+    --font-family-text: "Neue Montreal Regular", "Arial"; 
+    --font-family-text-medium: "Neue Montreal Medium", "Arial";
+    --font-family-text-italic-medium: "Neue Montreal Medium Italic" "Arial";
+    --font-family-title: "Reckless Neue Regular", "Times New Roman";
 
     --font-size-top-bar: 14px;
     --font-size-nav-bar:16px;
