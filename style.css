@@ -22,6 +22,7 @@
     --background-blue: #112C50;
     --background-button-yellow: #E3BE86;
     --background-button-orange: #C55A26;
+    --background-box-blue: #B9CADE;
 
     --font-color-white: #F1F0EA;
     --font-color-black: #000000;
@@ -34,7 +35,7 @@
 
     --font-size-top-bar: 14px;
     --font-size-nav-bar:16px;
-    --font-size-p-inicio: 18px;
+    --font-size-p-inicio: 20px;
     --font-size-p:16px;
     --font-size-eslogan: 55px;
     --font-size-section-title: 32px;
@@ -160,7 +161,7 @@
 
 .highlight{
     font-family: var(--font-family-text-italic-medium) ;
-    font-size: var(--font-size-p-inicio);
+   
 }
 
 .hero-content > p{
@@ -306,5 +307,67 @@
 }
 
 .team-grid{
+    margin-left: var(--margin-grid);
+    margin-right: var(--margin-grid);
+    padding-top: var(--padding-sections-big);
+    padding-bottom: var(--padding-sections-big);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    position: relative;
+
+}
+
+.team-left{
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
     
 }
+
+.team-right{
+    grid-column: 4 / 13;
+    grid-row: 1;
+}
+
+.blue-square-team{
+    position: absolute;
+    width: 40px; /* Ajusta el ancho según necesites */
+    height: 5px; /* Ajusta la altura según necesites */
+    background-color: #003366; /* Cambia el color según el tono de azul que desees */
+    margin-bottom: 8px;
+    top:60px;
+}
+
+.title-team{
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-section-title);
+    font-weight: 100;
+    padding-bottom: var(--padding-sections-big);
+}
+
+.box-blue{
+    padding-top: 40px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    background-color: var(--background-box-blue);
+    border-radius: 30px;
+}
+
+.text-box-team {
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-p-inicio);
+    padding-bottom: var(--padding-separation-text-sections);
+}
+
+.title-card{
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-p-inicio);
+    font-weight: 300;
+}
+
+.text-card{
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-p);
+}
+
