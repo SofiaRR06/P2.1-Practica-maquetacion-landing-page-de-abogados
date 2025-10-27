@@ -510,4 +510,43 @@ textarea::placeholder {
     border: solid 2px var(--font-color-black);
 }
 
+.location{
+    position: relative;
+    padding-bottom: var(--padding-sections);
+}
 
+.blue-square-location{
+    position: absolute;
+    width: 40px; /* Ajusta el ancho según necesites */
+    height: 5px; /* Ajusta la altura según necesites */
+    background-color: #003366; /* Cambia el color según el tono de azul que desees */
+    margin-bottom: 8px;
+}
+
+.content-location{
+    padding-top: 10px;
+}
+
+.location-grid{
+    padding-bottom: var(--padding-separation-text-sections);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.location-text{
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+
+.location-map{
+    grid-column: 5 / 13;
+    grid-row: 1 / 2;
+}
+
+.text-location{
+    padding-top: 40px;
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-p);
+    line-height: var(--line-height-p);
+}

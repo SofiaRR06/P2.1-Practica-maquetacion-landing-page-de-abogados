@@ -190,36 +190,45 @@
       Programar una consulta es fácil. Puede llamarnos directamente al número proporcionado en<br> nuestro sitio web o
       completar el formulario de contacto en línea.
     </p>
-    <form action="#" method="POST" >
+    <form action="#" method="POST">
       <div class="contact-grid">
-      <div class="item-nombre">
-      <input type="text" id="name" name="name" placeholder="Nombre" class="input-box" />
+        <div class="item-nombre">
+          <input type="text" id="name" name="name" placeholder="Nombre" class="input-box" />
+        </div>
+        <div class="item-apellidos">
+          <input type="text" id="surname" name="surname" placeholder="Apellidos" class="input-box" />
+        </div>
+        <div class="item-email">
+          <input type="email" id="email" name="email" placeholder="Email" class="input-box" />
+        </div>
+        <div class="item-tlf">
+          <input type="text" id="tlf" name="tlf" placeholder="Tlf." class="input-box" />
+        </div>
+        <div class="item-mensaje">
+          <textarea id="message" name="message" rows="5" class="input-box" placeholder="Motivo de consulta"></textarea>
+        </div>
+        <button type="submit" class="btn-submit">ENVIAR</button>
       </div>
-      <div class="item-apellidos">
-      <input type="text" id="surname" name="surname" placeholder="Apellidos" class="input-box"/>
-      </div>
-      <div class="item-email">
-      <input type="email" id="email" name="email" placeholder="Email" class="input-box"/>
-      </div>
-      <div class="item-tlf">
-      <input type="text" id="tlf" name="tlf" placeholder="Tlf." class="input-box"/>
-      </div>
-      <div class="item-mensaje">
-      <textarea id="message" name="message" rows="5" class="input-box" placeholder="Motivo de consulta"></textarea>
-      </div>
-      <button type="submit" class="btn-submit">ENVIAR</button>
-       </div>
     </form>
 </section>
 
 <!-- Location Section -->
 <section class="location">
-  <div class=" margin-grid blue-square-contact"></div>
-  <h3>Dónde encontrarnos</h3>
-  <p>C/ Barcas 31, Valencia CP. 46005</p>
-  <div class="map">
-    <!-- Embed Google Maps iframe or similar -->
-    <iframe src="https://www.google.com/maps/embed?..."></iframe>
+  <div class=" margin-grid blue-square-location"></div>
+  <div class="content-location margin-grid">
+    <div class="location-grid">
+      <div class="location-text">
+        <h3 class="title-contact">Dónde encontrarnos</h3>
+        <p class="text-location">C/ de les Barques 31,<br> Valencia CP. 46002</p>
+      </div>
+      <div class="location-map">
+        <!-- Embed Google Maps iframe or similar -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8064.915032467113!2d-0.3731603706583878!3d39.46830863513594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6048b357b2bf75%3A0xff58a4bf6ddf8252!2sC%2F%20de%20les%20Barques%2C%2031%2C%20Ciutat%20Vella%2C%2046002%20Val%C3%A8ncia!5e1!3m2!1ses!2ses!4v1761566963273!5m2!1ses!2ses"
+          width="870" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
   </div>
 </section>
 
