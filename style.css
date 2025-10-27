@@ -23,6 +23,7 @@
     --background-button-yellow: #E3BE86;
     --background-button-orange: #C55A26;
     --background-box-blue: #B9CADE;
+    --background-box-white:#F1F0EA;
 
     --font-color-white: #F1F0EA;
     --font-color-black: #000000;
@@ -56,7 +57,9 @@
 
     --border-radius-button:7px;
 
-    --margin-grid: 120px
+    --margin-grid: 120px;
+
+    --line-height-p: 25px;
 }
 
 *{
@@ -371,3 +374,43 @@
     font-size: var(--font-size-p);
 }
 
+.testimonials{
+    background-color: var(--background-blue);
+    position: relative;
+    padding-bottom: var(--padding-sections);
+}
+
+.blue-square-testimonials{
+    position: absolute;
+    width: 40px; /* Ajusta el ancho según necesites */
+    height: 5px; /* Ajusta la altura según necesites */
+    background-color: #003366; /* Cambia el color según el tono de azul que desees */
+    margin-bottom: 8px;
+    top:40px;
+}
+
+.content{
+    padding-top: 60px;
+}
+
+.title-testimonials{
+    color: var(--font-color-white);
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-section-title);
+    font-weight: 100;
+    padding-bottom: var(--padding-separation-text-sections);
+}
+
+.card-testimonials{
+    padding: 20px;
+    background-color: var(--background-box-white);
+}
+
+.text-testimonials{
+    padding-bottom: var(--padding-separation-text-sections);
+    line-height: var(--line-height-p);
+}
+
+.gap{
+    gap: 30px;
+}
